@@ -11,3 +11,7 @@ Then it shows and image, title, year of the movies.
 ### The link that I used for this project
 
 `https://www.freecodecamp.org/news/how-to-build-a-movie-search-app-using-react-hooks-24eb72ddfaf7/`
+
+### The API's website
+
+`http://www.omdbapi.com/`

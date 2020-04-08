@@ -5,10 +5,10 @@ import Movie from "./Components/Movie";
 import Search from "./Components/Search";
 
 // This is the original link for the snippet that I found
-// const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b";
+const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b";
 
 // This is my link
-const MOVIE_API_URL = "https://www.omdbapi.com/?i=tt3896198&apikey=1e50f614";
+// const MOVIE_API_URL = "https://www.omdbapi.com/?i=tt3896198&apikey=1e50f614";
 
 const initialState = {
   loading: true,
@@ -61,10 +61,10 @@ const App = () => {
     });
 
     // This is the original link for the snippet that I found
-    // fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=4a3b711b`)
+    fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=4a3b711b`)
 
     // This is my link
-    fetch(`https://www.omdbapi.com/?i=${searchValue}&apikey=1e50f614`)
+    // fetch(`https://www.omdbapi.com/?i=${searchValue}&apikey=1e50f614`)
       .then((response) => response.json())
       .then((jsonResponse) => {
         if (jsonResponse.Response === "True") {
