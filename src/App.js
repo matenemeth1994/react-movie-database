@@ -3,6 +3,10 @@ import "./App.css";
 import Header from "./Components/Header";
 import Movie from "./Components/Movie";
 import Search from "./Components/Search";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const MOVIE_API_URL = "https://www.omdbapi.com/?s=spider&apikey=1e50f614";
 
@@ -47,9 +51,15 @@ const App = () => {
         ) : errorMessage ? (
           <div className="errorMessage">{errorMessage}</div>
         ) : (
-          movies.map((movie, index) => (
-            <Movie key={`${index}-${movie.Title}`} movie={movie} />
-          ))
+          <Container>
+            <Row>
+              {movies.map((movie, index) => (
+                <Col className="mx-auto" xs="auto" xl="auto" sm="auto" md="auto" lg="auto">
+                  <Movie key={`${index}-${movie.Title}`} movie={movie} />
+                </Col>
+              ))}
+            </Row>
+          </Container>
         )}
       </div>
     </div>
