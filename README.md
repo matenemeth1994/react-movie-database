@@ -3,6 +3,11 @@
 This website fetches data from an API. There is an input field where we can type in a movie's title.
 Then it shows and image, title, year of the movies. 
 
+### Built with
+
+* React
+* Bootstrap
+
 ### How to run this project:
 
 1. `npm or yarn intall` 
@@ -10,9 +15,10 @@ Then it shows and image, title, year of the movies.
 
 ### The API's website
 
-`http://www.omdbapi.com/`
+http://www.omdbapi.com/
 
 ### Project link
 
 https://moviedatabase.matenemeth.co.uk/
+
 
